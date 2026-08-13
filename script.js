@@ -142,14 +142,24 @@ if (calendarMenuButton && calendarOptions) {
 }
 
 function updateActiveNavLink() {
-  const scrollPosition = window.scrollY + 140;
+  const offset = 140;
   let currentSectionId = 'inicio';
+  let found = false;
 
-  sections.forEach((section) => {
-    if (scrollPosition >= section.offsetTop) {
+  for (const section of sections) {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= offset && rect.bottom > offset) {
       currentSectionId = section.id;
+      found = true;
+      break;
     }
-  });
+  }
+
+  if (!found) {
+    const scrollPosition = window.scrollY + offset;
+    const passed = sections.filter((s) => scrollPosition >= s.offsetTop);
+    if (passed.length) currentSectionId = passed[passed.length - 1].id;
+  }
 
   navLinks.forEach((link) => {
     const isActive = link.getAttribute('href') === `#${currentSectionId}`;

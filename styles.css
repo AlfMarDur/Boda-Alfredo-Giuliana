@@ -311,6 +311,29 @@ h1 {
   background: white;
 }
 
+/* Small icon + label for calendar menu buttons */
+.btn--menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: transparent;
+  border-radius: 12px;
+}
+
+.btn__icon {
+  font-size: 1.2rem;
+  line-height: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.btn__label {
+  display: inline-block;
+}
+
 .section__header {
   margin-bottom: 20px;
 }
@@ -633,6 +656,120 @@ iframe {
     padding: 20px 18px;
   }
 
+  /* Mobile: overlay the content on top of the image using CSS Grid so it
+     remains visible above the photo without absolute positioning. */
+  .hero {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    /* Make the hero occupy most of the viewport on mobile so the image
+       stretches, but not the full height to allow scrolling to following sections. */
+    height: min(88vh, 820px);
+    overflow: hidden;
+  }
+
+  /* Place both media and content in the same grid cell, but keep the
+     content anchored to the top so it only covers the upper portion. */
+  .hero__media,
+  .hero__content {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+  }
+
+  .hero__media {
+    /* Fill the hero area so the image is stretched to the hero height */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .hero__content {
+    /* Position overlay relative to the hero/image: start at 5% and span 20% (to 25%) */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    height: 20%;
+    width: min(92%, 720px);
+    margin: 0;
+    padding: 8px 10px;
+    background: linear-gradient(180deg, rgba(47,35,56,0.82), rgba(47,35,56,0.46));
+    color: #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.28);
+    overflow: visible; /* no internal scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* Reduce large type and spacing so content fits within the 20% band */
+  .hero__content h1 {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+
+  .hero__content .hero__text,
+  .hero__content .eyebrow {
+    font-size: clamp(0.7rem, 2.2vw, 0.95rem);
+    margin: 0;
+  }
+
+  .hero__content .counter {
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .hero__actions .btn {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  /* Make counter items smaller and more compact on narrow devices */
+  .hero__content .counter {
+    gap: 6px;
+    margin-top: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero__content .counter__item {
+    padding: 8px 6px;
+    border-radius: 10px;
+  }
+
+  .hero__content .counter__item span {
+    font-size: clamp(1rem, 4.2vw, 1.4rem);
+  }
+
+  .hero__content .counter__item small {
+    font-size: 0.78rem;
+  }
+
+  /* Very narrow screens: stack counter vertically to save horizontal space */
+  @media (max-width: 420px) {
+    .hero__content {
+      height: auto;
+      top: 5%;
+      width: calc(100% - 24px);
+      padding: 8px 10px;
+    }
+
+    .hero__content .counter {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .hero__content .counter__item span {
+      font-size: clamp(1rem, 5.2vw, 1.25rem);
+    }
+  }
+
   .calendar-options {
     left: 50%;
     transform: translateX(-50%);
@@ -655,5 +792,54 @@ iframe {
 
   .counter {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Override overlay behavior: show content below the image in mobile */
+  .hero {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-bottom: 0.75rem;
+  }
+
+  .hero__media,
+  .hero__content {
+    grid-area: auto !important;
+    width: 100% !important;
+  }
+
+  .hero__media {
+    height: auto !important;
+    max-height: none !important;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+
+  .hero__content {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin-top: 12px !important;
+    width: 100% !important;
+    padding: 16px !important;
+    background: var(--card) !important;
+    color: var(--accent-strong) !important;
+    border-radius: 16px !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 6px 18px rgba(47,35,56,0.06) !important;
+  }
+
+  .hero__content h1 {
+    color: var(--accent-strong) !important;
+  }
+
+  .hero__content .eyebrow {
+    color: var(--accent-strong) !important;
+  }
+
+  .hero__text {
+    color: var(--accent-strong) !important;
   }
 }

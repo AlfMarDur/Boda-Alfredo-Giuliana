@@ -25,9 +25,9 @@
       <nav class="topbar__nav" aria-label="Secciones del sitio">
         <a href="#inicio">Inicio</a>
         <a href="#evento">La fiesta</a>
-        <a href="#confirmar">Confirma tu asistencia</a>
         <a href="#importante">Importante</a>
         <a href="#sitios">Sitios interesantes</a>
+        <a href="#confirmar">Confirma tu asistencia</a>
       </nav>
     </header>
 
@@ -49,8 +49,14 @@
             <div class="calendar-menu">
               <button id="calendar-menu-btn" class="btn btn--primary" type="button">Añadir al calendario</button>
               <div id="calendar-options" class="calendar-options" aria-hidden="true">
-                <button id="google-calendar-btn" class="btn btn--menu">Google Calendar</button>
-                <button id="apple-calendar-btn" class="btn btn--menu">Apple Calendar</button>
+                <button id="google-calendar-btn" class="btn btn--menu" type="button">
+                  <img class="btn__icon" src="images/google_calendar.png" alt="" aria-hidden="true" />
+                  <span class="btn__label">Google Calendar</span>
+                </button>
+                <button id="apple-calendar-btn" class="btn btn--menu" type="button">
+                  <img class="btn__icon" src="images/apple_calendar.png" alt="" aria-hidden="true" />
+                  <span class="btn__label">Apple Calendar</span>
+                </button>
               </div>
             </div>
           </div>
@@ -129,7 +135,7 @@
         <div class="card form-card">
           <form id="rsvp-form" class="custom-form">
             <div class="form-group">
-              <label for="name">Nombre *</label>
+              <label for="name">(*) Nombre</label>
               <input type="text" id="name" name="entry.1283631477" required />
             </div>
             <div class="form-group">
@@ -137,7 +143,7 @@
               <input type="text" id="companion-name" name="entry.542262819" placeholder="Opcional" />
             </div>
             <div class="form-group">
-              <label class="form-question">¿Pasarás la noche allí? *</label>
+              <label class="form-question">(*) ¿Pasarás la noche allí</label>
               <p class="form-help">
                 Las habitaciones van con desayuno incluido. La doble son 84€ y la individual 42€.
                 <br /><br />
