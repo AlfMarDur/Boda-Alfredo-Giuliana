@@ -6,9 +6,30 @@ const eventDetails = {
   location: 'Hotel Parque de Monfragüe, Torrejón el Rubio, Cáceres'
 };
 
+const translations = {
+  es: {
+    navLabel: 'Secciones del sitio', navHome: 'Inicio', navEvent: 'La fiesta', navImportant: 'Importante', navPlaces: 'Sitios interesantes', navRsvp: 'Confirma tu asistencia',
+    languageLabel: 'Cambiar idioma', heroEyebrow: 'Te invitamos a compartir nuestro día', heroTextBefore: 'Celebraremos nuestra boda el', heroTextAfter: 'y queremos que vengas.', countdownLabel: 'Cuenta regresiva para la boda', days: 'Días', hours: 'Horas', minutes: 'Minutos', addToCalendar: 'Añadir al calendario',
+    eventEyebrow: 'La fiesta', whereWhen: 'Donde y cuando', dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', mapTitle: 'Mapa del lugar de la boda', hotelAlt: 'Hotel donde se celebrará la boda', dressCodeTitle: 'Código de vestimenta',
+    dressCode1: '👔 Venid guapos, pero cómodos.', dressCode2: '🚫 Solo hay una norma: las corbatas están oficialmente prohibidas.', dressCode3: '☀️ Es Extremadura, por mucho que sea septiembre hará calor y bastante, así que no queremos ver a nadie sufriendo.', dressCode4: '🎉 Esto es una celebración para disfrutar, no una prueba de resistencia.',
+    importantEyebrow: 'Importante', importantIntro: '💛 Lo más importante será el recuerdo que nos llevaremos de este día.', important1: '🚫💳 No hay número de cuenta, lista de bodas ni esperamos ningún regalo.', important2: '❤️ Lo único que queremos es celebrar este día con la gente que queremos. Bastante regalo es que os animéis a venir hasta el culo del mundo para acompañarnos.',
+    placesEyebrow: 'Sitios interesantes', placesTitle: 'Qué ver cerca', monfrague: 'Parque de Monfragüe.', placesText: 'Si queréis, podemos añadir enlaces, horarios o un mapa con direcciones. Decidnos qué preferís.', rsvpEyebrow: 'Confirma tu asistencia', nameLabel: '(*) Nombre', companionLabel: 'Nombre acompañante', optional: 'Opcional', overnightQuestion: '(*) ¿Pasarás la noche allí?', overnightHelp: 'Las habitaciones van con desayuno incluido. La doble son 84€ y la individual 42€.<br><br>Estos precios son válidos para la noche de la fiesta, tendríamos que consultar precios si alguien quisiera estar alguna noche más.', yes: 'Sí', no: 'No', transportLabel: 'Si sales desde Madrid, dinos si quieres que tratemos de encontrarte la manera de ir y volver al Hotel', transportPlaceholder: 'Cuéntanos tu necesidad', dietaryLabel: '¿Tienes alguna intolerancia alimentaria que debamos tener en cuenta?', dietaryPlaceholder: 'Cuéntanos si tienes alguna restricción', submitRsvp: 'Enviar confirmación', successMessage: '✓ ¡Gracias por confirmar tu asistencia! Nos vemos el día de la boda.', fallbackMessage: '✓ ¡Gracias! Tu respuesta ha sido recibida.'
+  },
+  it: {
+    navLabel: 'Sezioni del sito', navHome: 'Inizio', navEvent: 'La festa', navImportant: 'Importante', navPlaces: 'Luoghi interessanti', navRsvp: 'Conferma la tua presenza',
+    languageLabel: 'Cambia lingua', heroEyebrow: 'Ti invitiamo a condividere il nostro giorno', heroTextBefore: 'Celebreremo il nostro matrimonio il', heroTextAfter: 'e vogliamo che tu venga.', countdownLabel: 'Conto alla rovescia per il matrimonio', days: 'Giorni', hours: 'Ore', minutes: 'Minuti', addToCalendar: 'Aggiungi al calendario',
+    eventEyebrow: 'La festa', whereWhen: 'Dove e quando', dateLabel: 'Data', timeLabel: 'Ora', placeLabel: 'Luogo', mapTitle: 'Mappa del luogo del matrimonio', hotelAlt: 'Hotel dove si celebrerà il matrimonio', dressCodeTitle: 'Dress code',
+    dressCode1: '👔 Venite eleganti, ma comodi.', dressCode2: '🚫 C’è una sola regola: le cravatte sono ufficialmente vietate.', dressCode3: '☀️ È l’Estremadura: anche se sarà settembre, farà molto caldo e non vogliamo vedere nessuno soffrire.', dressCode4: '🎉 È una festa da vivere e divertirsi, non una prova di resistenza.',
+    importantEyebrow: 'Importante', importantIntro: '💛 La cosa più importante sarà il ricordo che porteremo con noi di questo giorno.', important1: '🚫💳 Non c’è un conto corrente, una lista nozze e non ci aspettiamo regali.', important2: '❤️ Vogliamo solo festeggiare questo giorno con le persone che amiamo. Il regalo più grande è che veniate fin qui per stare con noi.',
+    placesEyebrow: 'Luoghi interessanti', placesTitle: 'Cosa vedere nei dintorni', monfrague: 'Parco di Monfragüe.', placesText: 'Se volete, possiamo aggiungere link, orari o una mappa con le indicazioni. Diteci cosa preferite.', rsvpEyebrow: 'Conferma la tua presenza', nameLabel: '(*) Nome', companionLabel: 'Nome accompagnatore', optional: 'Facoltativo', overnightQuestion: '(*) Passerai la notte lì?', overnightHelp: 'Le camere includono la colazione. La doppia costa 84€ e la singola 42€.<br><br>Questi prezzi sono validi per la notte della festa; dovremmo verificare i prezzi se qualcuno volesse fermarsi qualche notte in più.', yes: 'Sì', no: 'No', transportLabel: 'Se parti da Madrid, facci sapere se vuoi che proviamo a trovare un modo per andare e tornare in hotel', transportPlaceholder: 'Raccontaci di cosa hai bisogno', dietaryLabel: 'Hai qualche intolleranza alimentare di cui dovremmo tenere conto?', dietaryPlaceholder: 'Raccontaci se hai qualche restrizione', submitRsvp: 'Invia conferma', successMessage: '✓ Grazie per aver confermato la tua presenza! Ci vediamo il giorno del matrimonio.', fallbackMessage: '✓ Grazie! La tua risposta è stata ricevuta.'
+  }
+};
+
+let currentLanguage = 'es';
+
 function formatDate(dateString) {
   const [year, month, day] = dateString.split('-').map(Number);
-  return new Intl.DateTimeFormat('es-ES', {
+  return new Intl.DateTimeFormat(currentLanguage === 'it' ? 'it-IT' : 'es-ES', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
@@ -62,6 +83,51 @@ const sections = Array.from(document.querySelectorAll('main .section'));
 const introEnvelope = document.getElementById('intro-envelope');
 const openInvitationButton = document.getElementById('open-invitation');
 const topbar = document.querySelector('.topbar');
+const languageSwitcher = document.getElementById('language-switcher');
+const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
+
+function applyLanguage(language) {
+  currentLanguage = translations[language] ? language : 'es';
+  const dictionary = translations[currentLanguage];
+
+  document.documentElement.lang = currentLanguage;
+  document.title = currentLanguage === 'it' ? 'Matrimonio di Alfredo e Giuliana' : 'Boda de Alfredo y Giuliana';
+
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const value = dictionary[element.dataset.i18n];
+    if (value !== undefined) element.textContent = value;
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach((element) => {
+    const value = dictionary[element.dataset.i18n];
+    if (value !== undefined) element.innerHTML = value;
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    element.placeholder = dictionary[element.dataset.i18nPlaceholder];
+  });
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
+    element.setAttribute('aria-label', dictionary[element.dataset.i18nAriaLabel]);
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach((element) => {
+    element.title = dictionary[element.dataset.i18nTitle];
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    element.alt = dictionary[element.dataset.i18nAlt];
+  });
+
+  if (dateLabel) dateLabel.textContent = formatDate(eventDetails.date);
+  if (dateDetail) dateDetail.textContent = formatDate(eventDetails.date);
+  languageButtons.forEach((button) => {
+    const isActive = button.dataset.language === currentLanguage;
+    button.classList.toggle('is-active', isActive);
+    button.setAttribute('aria-pressed', String(isActive));
+  });
+}
+
+languageButtons.forEach((button) => {
+  button.addEventListener('click', () => applyLanguage(button.dataset.language));
+});
 
 // If the intro envelope exists and is visible on load, hide the topbar underneath it
 if (topbar && introEnvelope && !introEnvelope.classList.contains('is-hidden')) {
@@ -119,6 +185,7 @@ if (introEnvelope && openInvitationButton) {
           topbar.style.visibility = '';
           topbar.removeAttribute('aria-hidden');
         }
+        if (languageSwitcher) languageSwitcher.hidden = false;
       }
     };
 
@@ -171,8 +238,7 @@ updateActiveNavLink();
 window.addEventListener('scroll', updateActiveNavLink, { passive: true });
 window.addEventListener('resize', updateActiveNavLink);
 
-if (dateLabel) dateLabel.textContent = formatDate(eventDetails.date);
-if (dateDetail) dateDetail.textContent = formatDate(eventDetails.date);
+applyLanguage(currentLanguage);
 if (locationLabel) locationLabel.textContent = eventDetails.location;
 if (mapFrame) {
   mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(eventDetails.location)}&t=k&output=embed`;
@@ -262,7 +328,7 @@ if (rsvpForm) {
         }
       });
 
-      formMessage.textContent = '✓ ¡Gracias por confirmar tu asistencia! Nos vemos el día de la boda.';
+      formMessage.textContent = translations[currentLanguage].successMessage;
       formMessage.classList.add('success');
       formMessage.classList.remove('error');
       rsvpForm.reset();
@@ -272,7 +338,7 @@ if (rsvpForm) {
       }, 5000);
     } catch (error) {
       console.error('Error al enviar:', error);
-      formMessage.textContent = '✓ ¡Gracias! Tu respuesta ha sido recibida.';
+      formMessage.textContent = translations[currentLanguage].fallbackMessage;
       formMessage.classList.add('success');
       formMessage.classList.remove('error');
       rsvpForm.reset();
