@@ -8,20 +8,20 @@ const eventDetails = {
 
 const translations = {
   es: {
-    navLabel: 'Secciones del sitio', navHome: 'Inicio', navEvent: 'La fiesta', navImportant: 'Importante', navPlaces: 'Sitios interesantes', navRsvp: 'Confirma tu asistencia',
+    navLabel: 'Secciones del sitio', navHome: 'Inicio', navEvent: 'La fiesta', navImportant: 'Importante', navPlaces: '¿Qué hacer por la zona?', navRsvp: 'Confirma tu asistencia',
     languageLabel: 'Cambiar idioma', heroEyebrow: 'Te invitamos a compartir nuestro día', heroTextBefore: 'Celebraremos nuestra boda el', heroTextAfter: 'y queremos que vengas.', countdownLabel: 'Cuenta regresiva para la boda', days: 'Días', hours: 'Horas', minutes: 'Minutos', addToCalendar: 'Añadir al calendario',
-    eventEyebrow: 'La fiesta', whereWhen: 'Donde y cuando', dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', mapTitle: 'Mapa del lugar de la boda', hotelAlt: 'Hotel donde se celebrará la boda', dressCodeTitle: 'Código de vestimenta',
+    eventEyebrow: 'La fiesta', whereWhen: 'Donde y cuando', dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', mapTitle: 'Mapa del lugar de la boda', openHotelMap: 'Abrir ubicación del hotel en Google Maps', hotelAlt: 'Hotel donde se celebrará la boda', dressCodeTitle: 'Código de vestimenta',
     dressCode1: '👔 Venid guapos, pero cómodos.', dressCode2: '🚫 Solo hay una norma: las corbatas están oficialmente prohibidas.', dressCode3: '☀️ Es Extremadura, por mucho que sea septiembre hará calor y bastante, así que no queremos ver a nadie sufriendo.', dressCode4: '🎉 Esto es una celebración para disfrutar, no una prueba de resistencia.',
     importantEyebrow: 'Importante', importantIntro: '💛 Lo más importante será el recuerdo que nos llevaremos de este día.', important1: '🚫💳 No hay número de cuenta, lista de bodas ni esperamos ningún regalo.', important2: '❤️ Lo único que queremos es celebrar este día con la gente que queremos. Bastante regalo es que os animéis a venir hasta el culo del mundo para acompañarnos.',
-    placesEyebrow: 'Sitios interesantes', placesTitle: 'Qué ver cerca', monfrague: 'Parque de Monfragüe.', placesText: 'Si queréis, podemos añadir enlaces, horarios o un mapa con direcciones. Decidnos qué preferís.', rsvpEyebrow: 'Confirma tu asistencia', nameLabel: '(*) Nombre', companionLabel: 'Nombre acompañante', optional: 'Opcional', overnightQuestion: '(*) ¿Pasarás la noche allí?', overnightHelp: 'Las habitaciones van con desayuno incluido. La doble son 84€ y la individual 42€.<br><br>Estos precios son válidos para la noche de la fiesta, tendríamos que consultar precios si alguien quisiera estar alguna noche más.', yes: 'Sí', no: 'No', transportLabel: 'Si sales desde Madrid, dinos si quieres que tratemos de encontrarte la manera de ir y volver al Hotel', transportPlaceholder: 'Cuéntanos tu necesidad', dietaryLabel: '¿Tienes alguna intolerancia alimentaria que debamos tener en cuenta?', dietaryPlaceholder: 'Cuéntanos si tienes alguna restricción', submitRsvp: 'Enviar confirmación', successMessage: '✓ ¡Gracias por confirmar tu asistencia! Nos vemos el día de la boda.', fallbackMessage: '✓ ¡Gracias! Tu respuesta ha sido recibida.'
+    placesEyebrow: '¿Qué hacer por la zona?', monfrague: 'Para ver la naturaleza', gameOfThrones: 'Para los fans de Juego de Tronos', hiking: 'Para hacer rutas', adventure: 'Para la aventura (recomendamos probar el barranquismo)', foodTitle: 'Para comer', foodCarouselLabel: 'Carrusel de platos típicos', foodTorta: 'Torta del Casar', foodMigas: 'Migas extremeñas', foodGoatCheese: 'Queso de cabra con pimentón de La Vera', foodCod: 'Bacalao dorado', foodHam: 'Jamón extremeño', foodMorcilla: 'Morcilla de Guadalupe', foodPatatera: 'Morcilla patatera', foodTortaAlt: 'Torta del Casar', foodMigasAlt: 'Plato de migas extremeñas', foodGoatCheeseAlt: 'Queso de cabra con pimentón de La Vera', foodCodAlt: 'Bacalao dorado', foodHamAlt: 'Jamón extremeño', foodSausagesAlt: 'Morcilla de Guadalupe y morcilla patatera, una junto a la otra', rsvpEyebrow: 'Confirma tu asistencia', nameLabel: '(*) Nombre', companionLabel: 'Nombre acompañante', optional: 'Opcional', overnightQuestion: '(*) ¿Pasarás la noche allí?', overnightHelp: 'Las habitaciones van con desayuno incluido. La doble son 84€ y la individual 42€.<br><br>Estos precios son válidos para la noche de la fiesta, tendríamos que consultar precios si alguien quisiera estar alguna noche más.', yes: 'Sí', no: 'No', transportLabel: 'Si saldrás desde Madrid, dinos si quieres que tratemos de encontrarte la manera de ir y volver al Hotel', transportPlaceholder: 'Cuéntanos tu necesidad', dietaryLabel: '¿Tienes alguna intolerancia alimentaria que debamos tener en cuenta?', dietaryPlaceholder: 'Cuéntanos si tienes alguna restricción', submitRsvp: 'Enviar confirmación', successMessage: '✓ ¡Gracias por confirmar tu asistencia! Nos vemos el día de la boda.', fallbackMessage: '✓ ¡Gracias! Tu respuesta ha sido recibida.'
   },
   it: {
-    navLabel: 'Sezioni del sito', navHome: 'Inizio', navEvent: 'La festa', navImportant: 'Importante', navPlaces: 'Luoghi interessanti', navRsvp: 'Conferma la tua presenza',
+    navLabel: 'Sezioni del sito', navHome: 'Inizio', navEvent: 'La festa', navImportant: 'Importante', navPlaces: 'Cosa fare nei dintorni?', navRsvp: 'Conferma la tua presenza',
     languageLabel: 'Cambia lingua', heroEyebrow: 'Ti invitiamo a condividere il nostro giorno', heroTextBefore: 'Celebreremo il nostro matrimonio il', heroTextAfter: 'e vogliamo che tu venga.', countdownLabel: 'Conto alla rovescia per il matrimonio', days: 'Giorni', hours: 'Ore', minutes: 'Minuti', addToCalendar: 'Aggiungi al calendario',
-    eventEyebrow: 'La festa', whereWhen: 'Dove e quando', dateLabel: 'Data', timeLabel: 'Ora', placeLabel: 'Luogo', mapTitle: 'Mappa del luogo del matrimonio', hotelAlt: 'Hotel dove si celebrerà il matrimonio', dressCodeTitle: 'Dress code',
+    eventEyebrow: 'La festa', whereWhen: 'Dove e quando', dateLabel: 'Data', timeLabel: 'Ora', placeLabel: 'Luogo', mapTitle: 'Mappa del luogo del matrimonio', openHotelMap: 'Apri la posizione dell’hotel su Google Maps', hotelAlt: 'Hotel dove si celebrerà il matrimonio', dressCodeTitle: 'Dress code',
     dressCode1: '👔 Venite eleganti, ma comodi.', dressCode2: '🚫 C’è una sola regola: le cravatte sono ufficialmente vietate.', dressCode3: '☀️ È l’Estremadura: anche se sarà settembre, farà molto caldo e non vogliamo vedere nessuno soffrire.', dressCode4: '🎉 È una festa da vivere e divertirsi, non una prova di resistenza.',
     importantEyebrow: 'Importante', importantIntro: '💛 La cosa più importante sarà il ricordo che porteremo con noi di questo giorno.', important1: '🚫💳 Non c’è un conto corrente, una lista nozze e non ci aspettiamo regali.', important2: '❤️ Vogliamo solo festeggiare questo giorno con le persone che amiamo. Il regalo più grande è che veniate fin qui per stare con noi.',
-    placesEyebrow: 'Luoghi interessanti', placesTitle: 'Cosa vedere nei dintorni', monfrague: 'Parco di Monfragüe.', placesText: 'Se volete, possiamo aggiungere link, orari o una mappa con le indicazioni. Diteci cosa preferite.', rsvpEyebrow: 'Conferma la tua presenza', nameLabel: '(*) Nome', companionLabel: 'Nome accompagnatore', optional: 'Facoltativo', overnightQuestion: '(*) Passerai la notte lì?', overnightHelp: 'Le camere includono la colazione. La doppia costa 84€ e la singola 42€.<br><br>Questi prezzi sono validi per la notte della festa; dovremmo verificare i prezzi se qualcuno volesse fermarsi qualche notte in più.', yes: 'Sì', no: 'No', transportLabel: 'Se parti da Madrid, facci sapere se vuoi che proviamo a trovare un modo per andare e tornare in hotel', transportPlaceholder: 'Raccontaci di cosa hai bisogno', dietaryLabel: 'Hai qualche intolleranza alimentare di cui dovremmo tenere conto?', dietaryPlaceholder: 'Raccontaci se hai qualche restrizione', submitRsvp: 'Invia conferma', successMessage: '✓ Grazie per aver confermato la tua presenza! Ci vediamo il giorno del matrimonio.', fallbackMessage: '✓ Grazie! La tua risposta è stata ricevuta.'
+    placesEyebrow: 'Cosa fare nei dintorni?', monfrague: 'Per ammirare la natura', gameOfThrones: 'Per i fan di Game of Thrones', hiking: 'Per fare escursioni', adventure: 'Per l’avventura (consigliamo di provare il canyoning)', foodTitle: 'Da mangiare', foodCarouselLabel: 'Carosello dei piatti tipici', foodTorta: 'Torta del Casar', foodMigas: 'Migas dell’Estremadura', foodGoatCheese: 'Formaggio di capra al pimentón de La Vera', foodCod: 'Bacalhau à Brás', foodHam: 'Prosciutto dell’Estremadura', foodMorcilla: 'Morcilla de Guadalupe', foodPatatera: 'Morcilla patatera', foodTortaAlt: 'Torta del Casar', foodMigasAlt: 'Piatto di migas dell’Estremadura', foodGoatCheeseAlt: 'Formaggio di capra al pimentón de La Vera', foodCodAlt: 'Bacalhau à Brás', foodHamAlt: 'Prosciutto dell’Estremadura', foodSausagesAlt: 'Morcilla de Guadalupe e morcilla patatera affiancate', rsvpEyebrow: 'Conferma la tua presenza', nameLabel: '(*) Nome', companionLabel: 'Nome accompagnatore', optional: 'Facoltativo', overnightQuestion: '(*) Passerai la notte lì?', overnightHelp: 'Le camere includono la colazione. La doppia costa 84€ e la singola 42€.<br><br>Questi prezzi sono validi per la notte della festa; dovremmo verificare i prezzi se qualcuno volesse fermarsi qualche notte in più.', yes: 'Sì', no: 'No', transportLabel: 'Se partirai da Madrid, facci sapere se vuoi che proviamo a trovare un modo per andare e tornare in hotel', transportPlaceholder: 'Raccontaci di cosa hai bisogno', dietaryLabel: 'Hai qualche intolleranza alimentare di cui dovremmo tenere conto?', dietaryPlaceholder: 'Raccontaci se hai qualche restrizione', submitRsvp: 'Invia conferma', successMessage: '✓ Grazie per aver confermato la tua presenza! Ci vediamo il giorno del matrimonio.', fallbackMessage: '✓ Grazie! La tua risposta è stata ricevuta.'
   }
 };
 
@@ -82,9 +82,29 @@ const navLinks = Array.from(document.querySelectorAll('.topbar__nav a[href^="#"]
 const sections = Array.from(document.querySelectorAll('main .section'));
 const introEnvelope = document.getElementById('intro-envelope');
 const openInvitationButton = document.getElementById('open-invitation');
+const fallingFlowers = document.getElementById('falling-flowers');
+const fallingFlowerTemplates = Array.from(document.querySelectorAll('template[id^="falling-flower-"]'));
 const topbar = document.querySelector('.topbar');
 const languageSwitcher = document.getElementById('language-switcher');
 const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
+
+if (fallingFlowers && fallingFlowerTemplates.length) {
+  const flowerCount = 30;
+
+  for (let index = 0; index < flowerCount; index += 1) {
+    const flower = document.createElement('span');
+    flower.className = 'falling-flower';
+    const template = fallingFlowerTemplates[index % fallingFlowerTemplates.length];
+    flower.append(template.content.cloneNode(true));
+    flower.style.setProperty('--flower-left', `${Math.random() * 100}%`);
+    flower.style.setProperty('--flower-size', `${32 + Math.random() * 32}px`);
+    flower.style.setProperty('--flower-duration', `${12.5 + Math.random() * 12.5}s`);
+    flower.style.setProperty('--flower-delay', `${-Math.random() * 20}s`);
+    flower.style.setProperty('--flower-drift', `${Math.random() * 180 - 90}px`);
+    flower.style.setProperty('--flower-angle', `${Math.random() * 360}deg`);
+    fallingFlowers.append(flower);
+  }
+}
 
 function applyLanguage(language) {
   currentLanguage = translations[language] ? language : 'es';
@@ -129,6 +149,132 @@ languageButtons.forEach((button) => {
   button.addEventListener('click', () => applyLanguage(button.dataset.language));
 });
 
+const foodCarouselSection = document.getElementById('comer');
+const foodCarouselToggle = foodCarouselSection && foodCarouselSection.querySelector('.food-subsection__summary');
+const foodCarouselContent = foodCarouselSection && foodCarouselSection.querySelector('.food-subsection__content');
+const foodCarousel = foodCarouselSection && foodCarouselSection.querySelector('.food-carousel');
+let foodCarouselCloseTimer = 0;
+
+const initializeFoodCarousel = () => {
+  if (!foodCarousel || foodCarouselToggle.getAttribute('aria-expanded') !== 'true' || foodCarousel.dataset.initialized === 'true') return;
+  foodCarousel.dataset.initialized = 'true';
+
+  const originalItems = Array.from(foodCarousel.querySelectorAll('.food-item'));
+  const originalItemCount = originalItems.length;
+  const makeFoodItemCopies = () => {
+    const copies = document.createDocumentFragment();
+
+    originalItems.forEach((item) => {
+      const copy = item.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      copy.querySelector('img').alt = '';
+      copy.querySelector('img').removeAttribute('data-i18n-alt');
+      copies.append(copy);
+    });
+
+    return copies;
+  };
+
+  foodCarousel.querySelector('.food-carousel__track').prepend(makeFoodItemCopies());
+  foodCarousel.querySelector('.food-carousel__track').append(makeFoodItemCopies());
+  const foodItems = Array.from(foodCarousel.querySelectorAll('.food-item'));
+  let foodCarouselFrame = 0;
+  let foodCarouselSettleTimer = 0;
+
+  const findClosestFoodItemIndex = () => {
+    const carouselCenter = foodCarousel.getBoundingClientRect().left + foodCarousel.clientWidth / 2;
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    foodItems.forEach((item, index) => {
+      const itemCenter = item.getBoundingClientRect().left + item.getBoundingClientRect().width / 2;
+      const distance = Math.abs(carouselCenter - itemCenter);
+
+      if (distance < closestDistance) {
+        closestIndex = index;
+        closestDistance = distance;
+      }
+    });
+
+    return closestIndex;
+  };
+
+  const updateFoodCarousel = () => {
+    foodCarouselFrame = 0;
+    const closestIndex = findClosestFoodItemIndex();
+
+    foodItems.forEach((item, index) => {
+      item.classList.toggle('is-active', index === closestIndex);
+    });
+  };
+
+  const settleFoodCarousel = () => {
+    window.clearTimeout(foodCarouselSettleTimer);
+    const closestIndex = findClosestFoodItemIndex();
+    const copyStart = foodItems[originalItemCount].offsetLeft;
+    const copyDistance = foodItems[originalItemCount * 2].offsetLeft - copyStart;
+
+    if (closestIndex < originalItemCount) {
+      foodCarousel.scrollTo({ left: foodCarousel.scrollLeft + copyDistance, behavior: 'instant' });
+    } else if (closestIndex >= originalItemCount * 2) {
+      foodCarousel.scrollTo({ left: foodCarousel.scrollLeft - copyDistance, behavior: 'instant' });
+    }
+
+    updateFoodCarousel();
+  };
+
+  foodCarousel.addEventListener('scroll', () => {
+    if (!foodCarouselFrame) foodCarouselFrame = requestAnimationFrame(updateFoodCarousel);
+    window.clearTimeout(foodCarouselSettleTimer);
+    foodCarouselSettleTimer = window.setTimeout(settleFoodCarousel, 180);
+  }, { passive: true });
+
+  foodCarousel.addEventListener('scrollend', settleFoodCarousel);
+  foodItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (item.classList.contains('is-active')) return;
+
+      const carouselCenter = foodCarousel.getBoundingClientRect().left + foodCarousel.clientWidth / 2;
+      const itemCenter = item.getBoundingClientRect().left + item.getBoundingClientRect().width / 2;
+      foodCarousel.scrollBy({ left: itemCenter - carouselCenter, behavior: 'smooth' });
+    });
+  });
+
+  const initialItem = foodItems[originalItemCount + 1] || foodItems[0];
+  if (initialItem) {
+    foodCarousel.scrollLeft = initialItem.offsetLeft - (foodCarousel.clientWidth - initialItem.offsetWidth) / 2;
+  }
+  updateFoodCarousel();
+};
+
+if (foodCarouselSection && foodCarouselToggle && foodCarouselContent) {
+  foodCarouselToggle.addEventListener('click', () => {
+    const isOpening = foodCarouselToggle.getAttribute('aria-expanded') !== 'true';
+    foodCarouselToggle.setAttribute('aria-expanded', String(isOpening));
+    window.clearTimeout(foodCarouselCloseTimer);
+
+    if (isOpening) {
+      foodCarouselContent.hidden = false;
+      foodCarouselContent.inert = false;
+      foodCarouselContent.setAttribute('aria-hidden', 'false');
+      requestAnimationFrame(() => {
+        foodCarouselContent.classList.add('is-open');
+        requestAnimationFrame(initializeFoodCarousel);
+      });
+      return;
+    }
+
+    foodCarouselContent.classList.remove('is-open');
+    foodCarouselContent.inert = true;
+    foodCarouselContent.setAttribute('aria-hidden', 'true');
+    foodCarouselCloseTimer = window.setTimeout(() => {
+      if (foodCarouselToggle.getAttribute('aria-expanded') === 'false') {
+        foodCarouselContent.hidden = true;
+      }
+    }, 350);
+  });
+}
+
 // If the intro envelope exists and is visible on load, hide the topbar underneath it
 if (topbar && introEnvelope && !introEnvelope.classList.contains('is-hidden')) {
   topbar.style.visibility = 'hidden';
@@ -167,6 +313,17 @@ if (introEnvelope && openInvitationButton) {
     const targetSection = document.getElementById('inicio');
 
     const handleEnd = () => {
+      if (fallingFlowers) {
+        fallingFlowers.classList.add('falling-flowers--background');
+        document.body.append(fallingFlowers);
+      }
+
+      if (topbar) {
+        topbar.style.visibility = '';
+        topbar.removeAttribute('aria-hidden');
+      }
+      if (languageSwitcher) languageSwitcher.hidden = false;
+
       introEnvelope.classList.add('is-hidden');
       introEnvelope.style.pointerEvents = 'none';
 
@@ -180,12 +337,6 @@ if (introEnvelope && openInvitationButton) {
       if (event.propertyName === 'opacity') {
         introEnvelope.style.display = 'none';
         introEnvelope.removeEventListener('transitionend', finishHide);
-        // Restore the topbar when the intro has fully hidden
-        if (topbar) {
-          topbar.style.visibility = '';
-          topbar.removeAttribute('aria-hidden');
-        }
-        if (languageSwitcher) languageSwitcher.hidden = false;
       }
     };
 

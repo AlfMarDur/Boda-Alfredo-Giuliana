@@ -15,10 +15,87 @@
   <body>
     <div id="intro-envelope" class="intro-envelope" aria-live="polite">
       <div class="intro-envelope__backdrop"></div>
+      <div id="falling-flowers" class="falling-flowers" aria-hidden="true"></div>
       <button id="open-invitation" class="intro-envelope__button" type="button" aria-label="Abrir invitación">
         <img src="images/sobre.png" alt="Sobre de invitación" class="intro-envelope__image" />
       </button>
     </div>
+    <template id="falling-flower-daisy">
+        <svg class="falling-flower__illustration" viewBox="0 0 80 120" focusable="false">
+          <path class="falling-flower__stem" d="M40 36 C38 62 45 82 39 112" />
+          <path class="falling-flower__leaf" d="M41 72 C54 58 63 64 62 66 C58 76 50 80 41 78" />
+          <path class="falling-flower__leaf" d="M41 91 C29 78 20 82 20 85 C25 94 32 98 41 97" />
+          <g class="falling-flower__petals">
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(30 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(60 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(90 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(120 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(150 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(180 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(210 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(240 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(270 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(300 40 30)" />
+            <ellipse cx="40" cy="17" rx="3.5" ry="12" transform="rotate(330 40 30)" />
+          </g>
+          <circle class="falling-flower__center" cx="40" cy="30" r="6.5" />
+          <g class="falling-flower__seeds">
+            <circle cx="37" cy="29" r="0.75" /><circle cx="41" cy="27" r="0.7" />
+            <circle cx="44" cy="30" r="0.8" /><circle cx="39" cy="33" r="0.7" />
+            <circle cx="36" cy="32" r="0.6" /><circle cx="42" cy="34" r="0.65" />
+          </g>
+        </svg>
+    </template>
+    <template id="falling-flower-cosmos">
+      <svg class="falling-flower__illustration falling-flower__illustration--cosmos" viewBox="0 0 80 120" focusable="false">
+        <path class="falling-flower__stem" d="M41 34 C36 58 47 84 40 112" />
+        <path class="falling-flower__leaf" d="M40 72 C29 64 24 65 21 72 C28 73 34 77 40 81" />
+        <path class="falling-flower__leaf" d="M42 91 C51 79 58 81 60 84 C55 92 49 96 41 98" />
+        <g class="falling-flower__petals falling-flower__petals--cosmos">
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(45 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(90 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(135 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(180 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(225 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(270 40 30)" />
+          <path d="M40 29 C37 23 37 11 40 7 C44 12 43 23 40 29Z" transform="rotate(315 40 30)" />
+        </g>
+        <circle class="falling-flower__center" cx="40" cy="30" r="5.5" />
+        <g class="falling-flower__seeds">
+          <circle cx="38" cy="28" r="0.7" /><circle cx="42" cy="29" r="0.8" />
+          <circle cx="39" cy="32" r="0.75" /><circle cx="43" cy="32" r="0.65" />
+        </g>
+      </svg>
+    </template>
+    <template id="falling-flower-sunflower">
+      <svg class="falling-flower__illustration falling-flower__illustration--sunflower" viewBox="0 0 80 120" focusable="false">
+        <path class="falling-flower__stem" d="M40 40 C44 64 35 86 41 112" />
+        <path class="falling-flower__leaf" d="M40 72 C27 61 20 67 21 70 C25 79 32 82 41 81Z" />
+        <path class="falling-flower__leaf" d="M39 93 C52 79 59 84 59 88 C54 97 48 100 40 100Z" />
+        <g class="falling-flower__petals falling-flower__petals--sunflower">
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(30 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(60 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(90 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(120 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(150 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(180 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(210 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(240 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(270 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(300 40 30)" />
+          <ellipse cx="40" cy="16" rx="3.2" ry="11" transform="rotate(330 40 30)" />
+        </g>
+        <circle class="falling-flower__center falling-flower__center--sunflower" cx="40" cy="30" r="7" />
+        <g class="falling-flower__seeds falling-flower__seeds--sunflower">
+          <circle cx="36" cy="28" r="0.8" /><circle cx="40" cy="27" r="0.9" />
+          <circle cx="44" cy="29" r="0.8" /><circle cx="37" cy="32" r="0.85" />
+          <circle cx="41" cy="33" r="0.9" /><circle cx="44" cy="33" r="0.65" />
+        </g>
+      </svg>
+    </template>
 
     <header class="topbar">
       <a class="brand" href="#inicio">Alfredo & Giuliana</a>
@@ -26,7 +103,7 @@
         <a href="#inicio" data-i18n="navHome">Inicio</a>
         <a href="#evento" data-i18n="navEvent">La fiesta</a>
         <a href="#importante" data-i18n="navImportant">Importante</a>
-        <a href="#sitios" data-i18n="navPlaces">Sitios interesantes</a>
+        <a href="#sitios" data-i18n="navPlaces">¿Qué hacer por la zona?</a>
         <a href="#confirmar" data-i18n="navRsvp">Confirma tu asistencia</a>
       </nav>
     </header>
@@ -95,6 +172,7 @@
                   referrerpolicy="no-referrer-when-downgrade"
                   allowfullscreen
                 ></iframe>
+                <a class="map-card__link" href="https://maps.app.goo.gl/wodMjDwx84WgK2Yf8" target="_blank" rel="noopener noreferrer" data-i18n="openHotelMap">Abrir ubicación del hotel en Google Maps</a>
               </div>
             </div>            <div class="event-card__media">
               <img class="event-photo" src="images/hotel.png" alt="Hotel donde se celebrará la boda" data-i18n-alt="hotelAlt" />
@@ -128,14 +206,59 @@
 
       <section id="sitios" class="section">
         <div class="section__header">
-          <p class="eyebrow" data-i18n="placesEyebrow">Sitios interesantes</p>
+          <p class="eyebrow" data-i18n="placesEyebrow">¿Qué hacer por la zona?</p>
         </div>
         <div class="card">
-          <h3 data-i18n="placesTitle">Qué ver cerca</h3>
           <ul class="important-list">
-            <li data-i18n="monfrague"><strong>Parque de Monfragüe:</strong>.</li>
+            <li>🦅 <a href="https://maps.app.goo.gl/tgRVKWicwAuRcRaL6" target="_blank" rel="noopener noreferrer" data-i18n="monfrague">Para ver la naturaleza</a></li>
+            <li>⚔️ <a href="https://viajeracinefila.org/localizaciones-de-juego-de-tronos-en-espana-caceres/" target="_blank" rel="noopener noreferrer" data-i18n="gameOfThrones">Para los fans de Juego de Tronos</a></li>
+            <li>🥾 <a href="https://maps.app.goo.gl/ztr7s8FfW5skDtJ88" target="_blank" rel="noopener noreferrer" data-i18n="hiking">Para hacer rutas</a></li>
+            <li>🧗 <a href="https://www.aventurajerte.es/" target="_blank" rel="noopener noreferrer" data-i18n="adventure">Para la aventura (recomendamos probar el barranquismo)</a></li>
           </ul>
-          <p class="info-intro" data-i18n="placesText">Si queréis, podemos añadir enlaces, horarios o un mapa con direcciones. Decidnos qué preferís.</p>
+          <div class="food-subsection" id="comer">
+            <button class="food-subsection__summary" type="button" aria-expanded="false" aria-controls="food-carousel-content">
+              <span class="food-subsection__title">
+                <span aria-hidden="true">🍽️</span>
+                <span data-i18n="foodTitle">Para comer</span>
+              </span>
+              <span class="food-subsection__indicator" aria-hidden="true"></span>
+            </button>
+            <div class="food-subsection__content" id="food-carousel-content" aria-hidden="true" inert hidden>
+              <div class="food-subsection__content-inner">
+                <div class="food-carousel" role="region" aria-label="Carrusel de platos típicos" data-i18n-aria-label="foodCarouselLabel">
+                  <div class="food-carousel__track">
+                    <figure class="food-item">
+                      <img src="images/torta-del-casar.jpg" alt="Torta del Casar" data-i18n-alt="foodTortaAlt" />
+                      <figcaption data-i18n="foodTorta">Torta del Casar</figcaption>
+                    </figure>
+                    <figure class="food-item">
+                      <img src="images/migas-extremenas.jpg" alt="Migas extremeñas" data-i18n-alt="foodMigasAlt" />
+                      <figcaption data-i18n="foodMigas">Migas extremeñas</figcaption>
+                    </figure>
+                    <figure class="food-item">
+                      <img src="images/queso-de-cabra-con-pimenton-lavera.jpg" alt="Queso de cabra con pimentón de La Vera" data-i18n-alt="foodGoatCheeseAlt" />
+                      <figcaption data-i18n="foodGoatCheese">Queso de cabra con pimentón de La Vera</figcaption>
+                    </figure>
+                    <figure class="food-item">
+                      <img src="images/bacalao-dorado.jpeg" alt="Bacalao dorado" data-i18n-alt="foodCodAlt" />
+                      <figcaption data-i18n="foodCod">Bacalao dorado</figcaption>
+                    </figure>
+                    <figure class="food-item">
+                      <img src="images/jamon-extremeno.png" alt="Jamón extremeño" data-i18n-alt="foodHamAlt" />
+                      <figcaption data-i18n="foodHam">Jamón extremeño</figcaption>
+                    </figure>
+                    <figure class="food-item">
+                      <img src="images/morcilla-patatera.jpg" alt="Morcilla y patatera" data-i18n-alt="foodSausagesAlt" />
+                      <figcaption class="food-item__split-labels">
+                        <span data-i18n="foodMorcilla">Morcilla de Guadalupe</span>
+                        <span data-i18n="foodPatatera">Patatera</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
