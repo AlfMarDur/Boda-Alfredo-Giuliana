@@ -89,7 +89,7 @@ const languageSwitcher = document.getElementById('language-switcher');
 const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
 
 if (fallingFlowers && fallingFlowerTemplates.length) {
-  const flowerCount = 30;
+  const flowerCount = 15;
 
   for (let index = 0; index < flowerCount; index += 1) {
     const flower = document.createElement('span');
@@ -98,8 +98,8 @@ if (fallingFlowers && fallingFlowerTemplates.length) {
     flower.append(template.content.cloneNode(true));
     flower.style.setProperty('--flower-left', `${Math.random() * 100}%`);
     flower.style.setProperty('--flower-size', `${32 + Math.random() * 32}px`);
-    flower.style.setProperty('--flower-duration', `${12.5 + Math.random() * 12.5}s`);
-    flower.style.setProperty('--flower-delay', `${-Math.random() * 20}s`);
+    flower.style.setProperty('--flower-duration', `${25 + Math.random() * 25}s`);
+    flower.style.setProperty('--flower-delay', `${-Math.random() * 40}s`);
     flower.style.setProperty('--flower-drift', `${Math.random() * 180 - 90}px`);
     flower.style.setProperty('--flower-angle', `${Math.random() * 360}deg`);
     fallingFlowers.append(flower);

@@ -916,7 +916,7 @@ iframe {
     transform: translate3d(0, -4vh, 0) rotate(var(--flower-angle));
   }
   10% {
-    opacity: 0.465;
+    opacity: 0.2325;
     transform: translate3d(var(--flower-drift), 8vh, 0) rotate(calc(var(--flower-angle) + 75deg));
   }
   35% {
@@ -926,7 +926,7 @@ iframe {
     transform: translate3d(calc(var(--flower-drift) * 0.8), 67vh, 0) rotate(calc(var(--flower-angle) + 265deg));
   }
   90% {
-    opacity: 0.36;
+    opacity: 0.18;
     transform: translate3d(calc(var(--flower-drift) * 0.65), 96vh, 0) rotate(calc(var(--flower-angle) + 350deg));
   }
   100% {
