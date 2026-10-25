@@ -89,7 +89,7 @@ const languageSwitcher = document.getElementById('language-switcher');
 const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
 
 if (fallingFlowers && fallingFlowerTemplates.length) {
-  const flowerCount = 15;
+  const flowerCount = 20;
 
   for (let index = 0; index < flowerCount; index += 1) {
     const flower = document.createElement('span');
