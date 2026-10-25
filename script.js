@@ -10,7 +10,7 @@ const translations = {
   es: {
     navLabel: 'Secciones del sitio', navHome: 'Inicio', navEvent: 'La fiesta', navImportant: 'Importante', navPlaces: '¿Qué hacer por la zona?', navRsvp: 'Confirma tu asistencia',
     languageLabel: 'Cambiar idioma', heroEyebrow: 'Te invitamos a compartir nuestro día', heroTextBefore: 'Celebraremos nuestra boda el', heroTextAfter: 'y queremos que vengas.', countdownLabel: 'Cuenta regresiva para la boda', days: 'Días', hours: 'Horas', minutes: 'Minutos', addToCalendar: 'Añadir al calendario',
-    eventEyebrow: 'La fiesta', whereWhen: 'Donde y cuando', dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', mapTitle: 'Mapa del lugar de la boda', openHotelMap: 'Abrir ubicación del hotel en Google Maps', hotelAlt: 'Hotel donde se celebrará la boda', dressCodeTitle: 'Código de vestimenta',
+    eventEyebrow: 'La fiesta', whereWhen: 'Donde y cuando', dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', mapTitle: 'Mapa del lugar de la boda', hotelAlt: 'Hotel donde se celebrará la boda', dressCodeTitle: 'Código de vestimenta',
     dressCode1: '👔 Venid guapos, pero cómodos.', dressCode2: '🚫 Solo hay una norma: las corbatas están oficialmente prohibidas.', dressCode3: '☀️ Es Extremadura, por mucho que sea septiembre hará calor y bastante, así que no queremos ver a nadie sufriendo.', dressCode4: '🎉 Esto es una celebración para disfrutar, no una prueba de resistencia.',
     importantEyebrow: 'Importante', importantIntro: '💛 Lo más importante será el recuerdo que nos llevaremos de este día.', important1: '🚫💳 No hay número de cuenta, lista de bodas ni esperamos ningún regalo.', important2: '❤️ Lo único que queremos es celebrar este día con la gente que queremos. Bastante regalo es que os animéis a venir hasta el culo del mundo para acompañarnos.',
     placesEyebrow: '¿Qué hacer por la zona?', monfrague: 'Para ver la naturaleza', gameOfThrones: 'Para los fans de Juego de Tronos', hiking: 'Para hacer rutas', adventure: 'Para la aventura (recomendamos probar el barranquismo)', foodTitle: 'Para comer', foodCarouselLabel: 'Carrusel de platos típicos', foodTorta: 'Torta del Casar', foodMigas: 'Migas extremeñas', foodGoatCheese: 'Queso de cabra con pimentón de La Vera', foodCod: 'Bacalao dorado', foodHam: 'Jamón extremeño', foodMorcilla: 'Morcilla de Guadalupe', foodPatatera: 'Morcilla patatera', foodTortaAlt: 'Torta del Casar', foodMigasAlt: 'Plato de migas extremeñas', foodGoatCheeseAlt: 'Queso de cabra con pimentón de La Vera', foodCodAlt: 'Bacalao dorado', foodHamAlt: 'Jamón extremeño', foodSausagesAlt: 'Morcilla de Guadalupe y morcilla patatera, una junto a la otra', rsvpEyebrow: 'Confirma tu asistencia', nameLabel: '(*) Nombre', companionLabel: 'Nombre acompañante', optional: 'Opcional', overnightQuestion: '(*) ¿Pasarás la noche allí?', overnightHelp: 'Las habitaciones van con desayuno incluido. La doble son 84€ y la individual 42€.<br><br>Estos precios son válidos para la noche de la fiesta, tendríamos que consultar precios si alguien quisiera estar alguna noche más.', yes: 'Sí', no: 'No', transportLabel: 'Si saldrás desde Madrid, dinos si quieres que tratemos de encontrarte la manera de ir y volver al Hotel', transportPlaceholder: 'Cuéntanos tu necesidad', dietaryLabel: '¿Tienes alguna intolerancia alimentaria que debamos tener en cuenta?', dietaryPlaceholder: 'Cuéntanos si tienes alguna restricción', submitRsvp: 'Enviar confirmación', successMessage: '✓ ¡Gracias por confirmar tu asistencia! Nos vemos el día de la boda.', fallbackMessage: '✓ ¡Gracias! Tu respuesta ha sido recibida.'
@@ -18,7 +18,7 @@ const translations = {
   it: {
     navLabel: 'Sezioni del sito', navHome: 'Inizio', navEvent: 'La festa', navImportant: 'Importante', navPlaces: 'Cosa fare nei dintorni?', navRsvp: 'Conferma la tua presenza',
     languageLabel: 'Cambia lingua', heroEyebrow: 'Ti invitiamo a condividere il nostro giorno', heroTextBefore: 'Celebreremo il nostro matrimonio il', heroTextAfter: 'e vogliamo che tu venga.', countdownLabel: 'Conto alla rovescia per il matrimonio', days: 'Giorni', hours: 'Ore', minutes: 'Minuti', addToCalendar: 'Aggiungi al calendario',
-    eventEyebrow: 'La festa', whereWhen: 'Dove e quando', dateLabel: 'Data', timeLabel: 'Ora', placeLabel: 'Luogo', mapTitle: 'Mappa del luogo del matrimonio', openHotelMap: 'Apri la posizione dell’hotel su Google Maps', hotelAlt: 'Hotel dove si celebrerà il matrimonio', dressCodeTitle: 'Dress code',
+    eventEyebrow: 'La festa', whereWhen: 'Dove e quando', dateLabel: 'Data', timeLabel: 'Ora', placeLabel: 'Luogo', mapTitle: 'Mappa del luogo del matrimonio', hotelAlt: 'Hotel dove si celebrerà il matrimonio', dressCodeTitle: 'Dress code',
     dressCode1: '👔 Venite eleganti, ma comodi.', dressCode2: '🚫 C’è una sola regola: le cravatte sono ufficialmente vietate.', dressCode3: '☀️ È l’Estremadura: anche se sarà settembre, farà molto caldo e non vogliamo vedere nessuno soffrire.', dressCode4: '🎉 È una festa da vivere e divertirsi, non una prova di resistenza.',
     importantEyebrow: 'Importante', importantIntro: '💛 La cosa più importante sarà il ricordo che porteremo con noi di questo giorno.', important1: '🚫💳 Non c’è un conto corrente, una lista nozze e non ci aspettiamo regali.', important2: '❤️ Vogliamo solo festeggiare questo giorno con le persone che amiamo. Il regalo più grande è che veniate fin qui per stare con noi.',
     placesEyebrow: 'Cosa fare nei dintorni?', monfrague: 'Per ammirare la natura', gameOfThrones: 'Per i fan di Game of Thrones', hiking: 'Per fare escursioni', adventure: 'Per l’avventura (consigliamo di provare il canyoning)', foodTitle: 'Da mangiare', foodCarouselLabel: 'Carosello dei piatti tipici', foodTorta: 'Torta del Casar', foodMigas: 'Migas dell’Estremadura', foodGoatCheese: 'Formaggio di capra al pimentón de La Vera', foodCod: 'Bacalhau à Brás', foodHam: 'Prosciutto dell’Estremadura', foodMorcilla: 'Morcilla de Guadalupe', foodPatatera: 'Morcilla patatera', foodTortaAlt: 'Torta del Casar', foodMigasAlt: 'Piatto di migas dell’Estremadura', foodGoatCheeseAlt: 'Formaggio di capra al pimentón de La Vera', foodCodAlt: 'Bacalhau à Brás', foodHamAlt: 'Prosciutto dell’Estremadura', foodSausagesAlt: 'Morcilla de Guadalupe e morcilla patatera affiancate', rsvpEyebrow: 'Conferma la tua presenza', nameLabel: '(*) Nome', companionLabel: 'Nome accompagnatore', optional: 'Facoltativo', overnightQuestion: '(*) Passerai la notte lì?', overnightHelp: 'Le camere includono la colazione. La doppia costa 84€ e la singola 42€.<br><br>Questi prezzi sono validi per la notte della festa; dovremmo verificare i prezzi se qualcuno volesse fermarsi qualche notte in più.', yes: 'Sì', no: 'No', transportLabel: 'Se partirai da Madrid, facci sapere se vuoi che proviamo a trovare un modo per andare e tornare in hotel', transportPlaceholder: 'Raccontaci di cosa hai bisogno', dietaryLabel: 'Hai qualche intolleranza alimentare di cui dovremmo tenere conto?', dietaryPlaceholder: 'Raccontaci se hai qualche restrizione', submitRsvp: 'Invia conferma', successMessage: '✓ Grazie per aver confermato la tua presenza! Ci vediamo il giorno del matrimonio.', fallbackMessage: '✓ Grazie! La tua risposta è stata ricevuta.'
@@ -82,6 +82,8 @@ const navLinks = Array.from(document.querySelectorAll('.topbar__nav a[href^="#"]
 const sections = Array.from(document.querySelectorAll('main .section'));
 const introEnvelope = document.getElementById('intro-envelope');
 const openInvitationButton = document.getElementById('open-invitation');
+const envelopeOpeningSound = document.getElementById('envelope-opening-sound');
+const envelopeMusic = document.getElementById('envelope-music');
 const fallingFlowers = document.getElementById('falling-flowers');
 const fallingFlowerTemplates = Array.from(document.querySelectorAll('template[id^="falling-flower-"]'));
 const topbar = document.querySelector('.topbar');
@@ -89,7 +91,7 @@ const languageSwitcher = document.getElementById('language-switcher');
 const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
 
 if (fallingFlowers && fallingFlowerTemplates.length) {
-  const flowerCount = 20;
+  const flowerCount = 35;
 
   for (let index = 0; index < flowerCount; index += 1) {
     const flower = document.createElement('span');
@@ -309,6 +311,22 @@ if (introEnvelope && openInvitationButton) {
   openInvitationButton.addEventListener('click', () => {
     openInvitationButton.disabled = true;
     openInvitationButton.classList.add('is-opening');
+
+    if (envelopeOpeningSound) {
+      envelopeOpeningSound.playbackRate = 2;
+      envelopeOpeningSound.play().catch((error) => {
+        console.error('No se pudo reproducir el sonido de apertura:', error);
+      });
+    }
+
+    window.setTimeout(() => {
+      if (envelopeMusic) {
+        envelopeMusic.volume = 0.05;
+        envelopeMusic.play().catch((error) => {
+          console.error('No se pudo reproducir la música de la invitación:', error);
+        });
+      }
+    }, 2000);
 
     const targetSection = document.getElementById('inicio');
 

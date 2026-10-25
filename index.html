@@ -21,6 +21,8 @@
         <img src="images/sobre.png" alt="Sobre de invitación" class="intro-envelope__image" />
       </button>
     </div>
+    <audio id="envelope-opening-sound" src="sounds/opening-envelope.mp3" preload="none"></audio>
+    <audio id="envelope-music" src="sounds/musica-boda.mp3" preload="none"></audio>
     <template id="falling-flower-daisy">
         <svg class="falling-flower__illustration" viewBox="0 0 80 120" focusable="false">
           <path class="falling-flower__stem" d="M40 36 C38 62 45 82 39 112" />
@@ -161,7 +163,7 @@
               <h3 data-i18n="whereWhen">Donde y cuando</h3>
               <ul>
                 <li><span data-i18n="dateLabel">Fecha</span><strong id="event-date-detail"></strong></li>
-                <li><span data-i18n="timeLabel">Hora</span><strong>20:00</strong></li>
+                <li><span data-i18n="timeLabel">Hora</span><strong>21:00</strong></li>
                 <li><span data-i18n="placeLabel">Lugar</span><strong id="event-location"></strong></li>
               </ul>
               <div class="map-card">
@@ -173,7 +175,6 @@
                   referrerpolicy="no-referrer-when-downgrade"
                   allowfullscreen
                 ></iframe>
-                <a class="map-card__link" href="https://maps.app.goo.gl/wodMjDwx84WgK2Yf8" target="_blank" rel="noopener noreferrer" data-i18n="openHotelMap">Abrir ubicación del hotel en Google Maps</a>
               </div>
             </div>            <div class="event-card__media">
               <img class="event-photo" src="images/hotel.png" alt="Hotel donde se celebrará la boda" data-i18n-alt="hotelAlt" />
